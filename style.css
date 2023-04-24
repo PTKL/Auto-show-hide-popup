@@ -1,0 +1,42 @@
+body{
+    background: rgb(255, 176, 246);
+}
+#main{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.logo{
+    width: 22%;
+    padding: 5px;
+    text-align: center;
+}
+
+h2{
+    padding: 0px 10px;
+    margin: 0;
+    color: blueviolet;
+    text-align: center;
+}
+p{
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    padding: 5px 5px;
+    color: brown;
+}
+
+.trip {
+    display: none;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 270px;
+    height: 140px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgb(174, 247, 251);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="1" class="trip">
+            <img src="guarantee.png" alt="" class="logo">
+            <h2>
+                This is a popup1.
+            </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="2" class="trip">
+            <img src="guarantee.png" alt="" class="logo">
+            <h2>
+                This is a popup2.
+            </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="3" class="trip">
+            <img src="guarantee.png" alt="" class="logo">
+            <h2>
+                This is a popup3.
+            </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        var $elem = $('#main .trip'),
+            l = $elem.length,
+            i = 0;
+
+            var $elem = $('#main .trip'), l = $elem.length, i = 0;
+
+            function go() {
+                $elem.eq(i % l).show(1000, function() {
+                    $elem.eq(i % l).delay(5000).fadeOut(500, go);
+                    i++;
+                })
+            }
+
+            go();
+    </script>
+</body>
+</html>
